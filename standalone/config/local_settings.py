@@ -28,5 +28,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 ADMINS = [
-    ("Hiiro admins", "admins@hiiro.app"),
+    ("Hiiro admins", "tech@hiiro.app"),
 ]
