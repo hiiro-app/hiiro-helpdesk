@@ -191,8 +191,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # This demo uses the console backend, which simply prints emails to the console
 # rather than actually sending them out.
-DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", "example@example.com")
-SERVER_EMAIL = os.environ.get("SERVER_EMAIL", "example@example.com")
+DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", "team@hiiro.app")
+SERVER_EMAIL = os.environ.get("SERVER_EMAIL", "team@hiiro.app")
 
 if os.environ.get("EMAIL_HOST", None):
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
