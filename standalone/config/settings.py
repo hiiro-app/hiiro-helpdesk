@@ -31,9 +31,11 @@ ALLOWED_HOSTS = os.environ.get(
     "DJANGO_HELPDESK_ALLOWED_HOSTS", "*, localhost, 0.0.0.0"
 ).split(",")
 
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "http")
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+CSRF_TRUSTED_ORIGINS = ['https://helpdesk.paris-int.hiiro.app/']
 
 # Application definition
 
